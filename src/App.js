@@ -1,37 +1,32 @@
+//primary fx
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+//styling
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+//page imports
 import About from "./pages/about";
 import Portfolio from "./pages/portfolio";
+//components
+import NavBar from "./components/navbar/navbar.component";
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <header
-        style={{
-          textAlign: `center`,
-          backgroundColor: `darkorchid`,
-          width: `100vw`,
-          // height: `10vh`,
-        }}
-      >
-        <h1>header with stuff man</h1>
-      </header>
+        <NavBar />
         <Switch>
-          <Route exact path ={"/"}>
+          <Route exact path={"/"}>
             <About />
           </Route>
-          <Route exact path ={"/about"}>
+          <Route exact path={"/about"}>
             <About />
           </Route>
-          <Route exact path ={"/portfolio"}>
+          <Route exact path={"/portfolio"}>
             <Portfolio />
           </Route>
         </Switch>
       </Router>
-
     </div>
   );
 }

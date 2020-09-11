@@ -1,0 +1,10 @@
+#customToggle {
+    padding: 5px;
+    display:flex;
+    text-Align: center;
+    border: none;
+}
+
+#customToggle:focus {
+    outline: none;
+}
