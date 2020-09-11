@@ -1,4 +1,14 @@
 html, body {
+  min-height: 100vh;
   background-color: #113372;
   text-Align: center;
+  color: rgb(255, 245, 233)
+}
+
+.aboutParallax {
+  min-height: 100vh;
+  background-image: url("./images/codecrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }

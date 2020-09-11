@@ -1,10 +1,14 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import About from "./pages/about";
+import Portfolio from "./pages/portfolio";
 
 function App() {
   return (
     <div className="App">
+      <Router>
       <header
         style={{
           textAlign: `center`,
@@ -15,12 +19,19 @@ function App() {
       >
         <h1>header with stuff man</h1>
       </header>
-      
-      <main style={{backgroundColor: `inherit`}}>
-        <section>intro to self</section>
-        <section>motivations and goals</section>
-        <section>past history/work experience</section>
-      </main>
+        <Switch>
+          <Route exact path ={"/"}>
+            <About />
+          </Route>
+          <Route exact path ={"/about"}>
+            <About />
+          </Route>
+          <Route exact path ={"/portfolio"}>
+            <Portfolio />
+          </Route>
+        </Switch>
+      </Router>
+
     </div>
   );
 }
