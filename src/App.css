@@ -14,6 +14,12 @@ html, body {
   background-position: bottom;
 }
 
-.aboutContainer {
-  background-color: tan;
+.aboutCard {
+  border-radius: .25rem;
+  background-color: rgba(248, 233, 214, 0.835);
+  margin: 2px 10px;
+  padding: 10px 10px;
+  height: 250px;
+  Color: rgb(0, 33, 85);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.527);
 }

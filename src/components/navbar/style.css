@@ -8,3 +8,10 @@
 #customToggle:focus {
     outline: none;
 }
+
+.navBrand {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FEFBFB;
+    font-size: 30px;
+    font-weight: bold;
+}
