@@ -12,7 +12,7 @@ export default function About() {
       <Container fluid className="aboutContainer">
         <Row style={{ paddingTop: "10vh" }}>
           <Col>
-            <img src={Mugshot} height="200px"></img>
+            <img src={Mugshot} height="200px" alt="headshot"></img>
           </Col>
         </Row>
         <br></br>

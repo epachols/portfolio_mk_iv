@@ -14,7 +14,7 @@ export default function NavBar() {
           target="_blank"
           title="visit my linkedin"
         >
-          <img src={Logo} height="55px"></img>
+          <img src={Logo} height="55px" alt="ETP logo"></img>
           <span className="navBrand">&nbsp;&nbsp;Evan Pacholski</span>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -36,7 +36,7 @@ export default function NavBar() {
               </li>
               <li></li>
               <li>
-                <a href="mailto:epacholski86@gmail.com?subject=Hello%20Evan%20RE-Portfolio&body=I%20was%20recently%20browsing%20your%20portfolio">
+                <a href="mailto:epacholski86@gmail.com">
                   contact me
                 </a>
               </li>
