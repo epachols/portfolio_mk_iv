@@ -16,7 +16,23 @@
     font-weight: bold;
 }
 
+.navigation {
+ font-size: 28px;
+}
+
 #basic-navbar-nav a {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400; 
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px 1px black;
+    transition: all ease-in-out 0.3s
+}
+
+#basic-navbar-nav a:hover {
+    text-decoration: line-through;
+    color: rgb(53, 161, 197);
+    font-size: 30px;
+    translate: translateY(5px);
+    translate: translateZ(10px);
 }

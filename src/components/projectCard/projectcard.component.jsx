@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import Col from "react-bootstrap/Col";
+import CrowSpinner from "../crowspinner/crowspinner.component";
 
 
 // props required by this ProjectCard: src, name, live, github, description
@@ -45,7 +46,7 @@ export default function ProjectCard(props) {
           </div>
         </div>
       ) : (
-        <h3>hhhhhhaaaaangggg on. r-r-r-r-ee-e-e-ee-ebuffering</h3>
+        <CrowSpinner />
       )}
     </Col>
   );

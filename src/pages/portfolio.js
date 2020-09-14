@@ -8,6 +8,8 @@ import ProjectContainer from "../components/projectContainer/projectcontainer.co
 import PawsLife from "../images/pawslife.png";
 import VidApi from "../images/videezyapi.png";
 import Videezy from "../images/videezypreview.png";
+import MoodIndigo from "../images/moodindigo.png";
+import CrowSpinner from "../components/crowspinner/crowspinner.component";
 
 export default function Portfolio() {
   const projects = [
@@ -39,12 +41,12 @@ export default function Portfolio() {
     },
    
     {
-      description: "this here is project 4",
-      moreInfo: "",
-      src: `http://placekitten.com/330/300`,
-      name: "project4",
-      live: "https://www.google.com",
-      github: "https://github.com/epachols",
+      description: "Weather-Styled Mood Music",
+      moreInfo: "Mood Indigo allows the user to select ",
+      src: MoodIndigo,
+      name: "Mood:Indigo",
+      live: "https://epachols.github.io/moodIndigo/",
+      github: "https://github.com/epachols/moodIndigo",
     },
   ];
 
@@ -68,7 +70,9 @@ export default function Portfolio() {
         </Col>
       </Row>
       <ProjectContainer projects={projects} />
-      <Row style={{ height: `400px`, backgroundColor:'white', marginTop: `-170px` }}></Row>
+      <Row style={{ height: `400px`, backgroundColor:'white', marginTop: `-170px` }}>
+        
+      </Row>
       <Footer />
     </Container>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
-// import Nav from "react-bootstrap/Nav"
+import Nav from "react-bootstrap/Nav";
 import Burger from "../burger/burger.component";
 import Logo from "../../images/logo.png";
 import "./style.css";
@@ -24,25 +24,29 @@ export default function NavBar() {
           children={<Burger />}
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <nav className="ml-auto">
-            <ul>
-              <li>
-                <NavLink to="/about" title="more about me">
-                  about
-                </NavLink>
-                &nbsp;&nbsp; | &nbsp;&nbsp;
-                <NavLink to="/portfolio" title="recent projects">
-                  portfolio
-                </NavLink>
-              </li>
-              <li></li>
-              <li>
-                <a href="mailto:epacholski86@gmail.com">
-                  contact me
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <Nav className="ml-auto navigation" as="ul">
+            <Nav.Item as="li">
+              | &nbsp;
+              <NavLink to="/about" title="more about me">
+                about
+              </NavLink>{" "}
+              &nbsp;|
+            </Nav.Item>
+            <Nav.Item as="li">
+              {" "}
+              | &nbsp;
+              <NavLink to="/portfolio" title="recent projects">
+                portfolio
+              </NavLink>{" "}
+              &nbsp;|
+            </Nav.Item>
+
+            <Nav.Item as="li">
+              | &nbsp;
+              <a href="mailto:epacholski86@gmail.com">contact me</a>
+              &nbsp; |
+            </Nav.Item>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     </div>
