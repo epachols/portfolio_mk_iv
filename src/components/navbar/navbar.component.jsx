@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
+// import Nav from "react-bootstrap/Nav"
 import Burger from "../burger/burger.component";
 import Logo from "../../images/logo.png";
 import "./style.css";

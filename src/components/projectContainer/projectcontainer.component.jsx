@@ -4,7 +4,7 @@ import ProjectCard from '../projectCard/projectcard.component'
 
 export default function ProjectContainer(props) {
     return (
-        <Row>
+        <Row className="px-2">
            {props.projects&&props.projects[0]? (
                props.projects.map(project => <ProjectCard project={project}/>)
                ) : (
