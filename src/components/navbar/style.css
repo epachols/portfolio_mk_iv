@@ -1,3 +1,9 @@
+#onlyNav {
+    width:100vw;
+}
+.navigation {
+    width:100vw;
+}
 #customToggle {
     padding: 5px;
     display:flex;

@@ -71,7 +71,6 @@ export default function Portfolio() {
       </Row>
       <ProjectContainer projects={projects} />
       <Row style={{ height: `400px`, backgroundColor:'white', marginTop: `-170px` }}>
-        
       </Row>
       <Footer />
     </Container>

@@ -8,23 +8,23 @@ import "./style.css";
 
 export default function NavBar() {
   return (
-    <div>
-      <Navbar expand="lg">
-        <Navbar.Brand
+    <>
+      <Navbar id="onlyNav" expand="lg">
+        {/* <Navbar.Brand
           href="https://www.linkedin.com/in/epacholski/"
           target="_blank"
           title="visit my linkedin"
         >
           <img src={Logo} height="55px" alt="ETP logo"></img>
           <span className="navBrand">&nbsp;&nbsp;Evan Pacholski</span>
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle
           id="customToggle"
           aria-controls="basic-navbar-nav"
           children={<Burger />}
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto navigation" as="ul">
+          <Nav className=" navigation" as="ul">
             <Nav.Item as="li">
               | &nbsp;
               <NavLink to="/about" title="more about me">
@@ -49,6 +49,6 @@ export default function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </div>
+    </>
   );
 }
