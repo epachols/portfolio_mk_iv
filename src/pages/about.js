@@ -10,17 +10,37 @@ export default function About() {
   return (
     <div className="aboutParallax">
       <Container fluid className="aboutContainer">
-        <Row style={{ paddingTop: "5vh", width:"100%" }}>
-          <Col xs={{span:10, offset:1}}>
-            <img src={Mugshot} height="250px" alt="headshot"></img>
+        <Row className="justify-content-center w-100 mt-5">
+          <h1>
+            Full Stack Developer
+            <span>Designer, Problem Solver & lifelong student</span>
+          </h1>
+          <h5 className="mt-3">
+            I code for the joy of solving problems, in all its forms.
+          </h5>
+        </Row>
+        <Row style={{ paddingTop: "5vh", width: "100%" }}>
+          <Col xs={{ span: 10, offset: 1 }}>
+            <img src={Mugshot} height="175px" alt="headshot"></img>
           </Col>
         </Row>
+
         <br></br>
         <br></br>
 
         <Row className="greeting">
           <div></div>
-          <div></div>
+          <div>
+            <h1>Hello,</h1>
+            <h2>I'm Evan. I hope today finds you well.</h2>
+            <p className="my-5 px-5">
+              I am a junior Full Stack Developer with a love of design and a
+              keen interest in data management solutions. Curiosity, enthusiasm
+              and a dedicated nature combined with a palette of soft skills
+              drives me to learn and grow daily, and I look forward to new
+              challenges and stacked odds.
+            </p>
+          </div>
           <div></div>
         </Row>
 
@@ -33,30 +53,53 @@ export default function About() {
           >
             <div className="aboutCard">
               <h6>
-                <span style={{ fontSize: "28px" }}>
-                  <i className="fas fa-layer-group"></i>
+                <span style={{ fontSize: "45px" }}>
+                  <i className="fas fa-layer-group my-3"></i>
                 </span>
                 <br></br>
-                <span style={{ fontSize: "20px" }}>Full Stack</span>
+                <span
+                  style={{
+                    fontSize: "20px",
+                    color: "black",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Full Stack
+                </span>
               </h6>
               <hr></hr>
-              <p style={{ textDecoration: "underline" }}>Languages I speak:</p>
+              <br></br>
+              <p className="mx-2">
+                I like building from the ground up, but I'm not afraid of
+                frameworks or dev docs.
+              </p>
               <ul>
+                <li
+                  style={{
+                    fontWeight: "bold",
+                    color: "black",
+                    fontSize: "1.15rem",
+                  }}
+                >
+                  Languages I speak:
+                </li>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>Sass</li>
                 <li>JavaScript</li>
                 <li>JSX</li>
-                <li>***</li>
+                <li>Sass</li>
+                <br></br>
 
-                <li>
-                  I have also worked with hosting platforms{" "}
-                  <span style={{ textDecoration: "underline" }}>such as:</span>
+                <li
+                  style={{
+                    fontWeight: "bold",
+                    color: "black",
+                    fontSize: "1.15rem",
+                  }}
+                >
+                  Host Tools:
                 </li>
-
-                <li>Git/Github</li>
-                <li>Heroku</li>
-                <li>Gitlab</li>
+                <li>Git, Github, Heroku, Gitlab</li>
               </ul>
 
               <p></p>
@@ -70,27 +113,46 @@ export default function About() {
           >
             <div className="aboutCard">
               <h6>
-                <span style={{ fontSize: "28px" }}>
-                  <i class="fas fa-drafting-compass"></i>
+                <span style={{ fontSize: "45px" }}>
+                  <i className="fas fa-drafting-compass my-3"></i>
                 </span>
                 <br></br>
-                <span style={{ fontSize: "20px" }}>UX/UI</span>
+                <span
+                  style={{
+                    fontSize: "20px",
+                    color: "black",
+                    fontWeight: "bold",
+                  }}
+                >
+                  UX/UI
+                </span>
               </h6>
               <hr></hr>
+              <br></br>
+              <p className="px-2">
+                I enjoy design work, especially creating straightforward UX and Mobile-forward apps 
+              </p>
               <ul>
-                <li>I enjoy design work</li>
-                <li>and have experience working with</li>
-                <li style={{ textDecoration: "underline" }}>
-                  Framework Libraries like:
+                <li
+                  style={{
+                    fontWeight: "bold",
+                    color: "black",
+                    fontSize: "1.15rem",
+                  }}
+                >
+                  Framework Libraries:
                 </li>
-                <li>***</li>
                 <li>React</li>
                 <li>BootStrap</li>
                 <li>AntDesign</li>
                 <li>Foundation</li>
                 <li>Materialize</li>
                 <br></br>
-                <li>as well as additional software such as:</li>
+                <li style={{
+                    fontWeight: "bold",
+                    color: "black",
+                    fontSize: "1.15rem",
+                  }}>other design tools:</li>
                 <li>Adobe photoshop</li>
                 <li>GIMP</li>
               </ul>
@@ -105,36 +167,59 @@ export default function About() {
           >
             <div className="aboutCard">
               <h6>
-                <span style={{ fontSize: "28px" }}>
-                  <i class="fas fa-server"></i>
+                <span style={{ fontSize: "45px" }}>
+                  <i className="fas fa-server my-3"></i>
                 </span>{" "}
                 <br></br>
-                <span style={{ fontSize: "20px" }}>Server-Side</span>
+                <span
+                  style={{
+                    fontSize: "20px",
+                    color: "black",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Server-Side
+                </span>
               </h6>
               <hr></hr>
+              <br></br>
+              <p className="mx-2">
+                I enjoy writing scalable, restful backend code that's legible
+                and modular.
+              </p>
               <ul>
-                <li style={{ textDecoration: "underline" }}>
+                <li
+                  style={{
+                    fontWeight: "bold",
+                    color: "black",
+                    fontSize: "1.15rem",
+                  }}
+                >
                   Backend JSREs and DBMSs:
                 </li>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>SQL, mySQL</li>
                 <li>NoSQL DBMSs</li>
-                <li>***</li>
-                <li style={{ textDecoration: "underline" }}>
-                  Additional applications:
+                <br></br>
+                <li
+                  style={{
+                    fontWeight: "bold",
+                    color: "black",
+                    fontSize: "1.15rem",
+                  }}
+                >
+                  other applications:
                 </li>
-                <li>Google Maps API</li>
-                <li>Express-session</li>
-                <li>Jitsi API</li>
-                <li>Axios</li>
-                <li>dotenv</li>
-                <li>etc.</li>
+                <li>
+                  Google Maps API, Express-session, Jitsi API, Axios, dotenv,
+                  etc
+                </li>
               </ul>
             </div>
           </Col>
         </Row>
-        {/* <Row style={{ height: "40vh", maxWidth:"100%"}}></Row> */}
+        <Row style={{ height: "50vh", maxWidth: "100%" }}></Row>
       </Container>
       <Footer />
     </div>

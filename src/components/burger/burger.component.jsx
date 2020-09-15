@@ -22,8 +22,6 @@ const StyledBurger = styled.div`
       transform: ${({ open }) => (open ? `rotate(45deg)` : `rotate(0deg)`)};
     }
     &:nth-child(2) {
-      ${'' /* transform: ${({ open }) =>
-        open ? `translate/y(-300%)` : `translateY(0)`}; */}
       opacity: ${({ open }) => (open ? `0` : `1`)};
     }
     &:nth-child(3) {
@@ -31,7 +29,7 @@ const StyledBurger = styled.div`
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     display:none;
   }
 `;

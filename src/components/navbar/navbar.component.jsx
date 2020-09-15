@@ -9,22 +9,22 @@ import "./style.css";
 export default function NavBar() {
   return (
     <>
-      <Navbar id="onlyNav" expand="lg">
-        {/* <Navbar.Brand
+      <Navbar id="onlyNav" expand="xl">
+        <Navbar.Brand
           href="https://www.linkedin.com/in/epacholski/"
           target="_blank"
           title="visit my linkedin"
         >
-          <img src={Logo} height="55px" alt="ETP logo"></img>
-          <span className="navBrand">&nbsp;&nbsp;Evan Pacholski</span>
-        </Navbar.Brand> */}
+          
+          <span className="navBrand"><img src={Logo} height="40px" alt="ETP logo"></img></span>
+        </Navbar.Brand>
         <Navbar.Toggle
           id="customToggle"
           aria-controls="basic-navbar-nav"
           children={<Burger />}
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className=" navigation" as="ul">
+          <Nav className="ml-auto navigation" as="ul">
             <Nav.Item as="li">
               | &nbsp;
               <NavLink to="/about" title="more about me">
