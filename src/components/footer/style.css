@@ -11,8 +11,8 @@
 }
 
 .footerContainer a {
-    color: rgb(68, 127, 236);
-    font-size: 18px;
+    color: #1847a0;
+    font-size: 25px;
 }
 
 a:hover {
@@ -21,5 +21,5 @@ a:hover {
 .footerBody {
     background: rgb(0, 0, 0);
     padding-bottom: 10px;
-    height: 2rem;
+    height: 3rem;
 }

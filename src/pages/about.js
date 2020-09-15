@@ -40,6 +40,8 @@ export default function About() {
               drives me to learn and grow daily, and I look forward to new
               challenges and stacked odds.
             </p>
+            <br></br>
+            <br></br>
           </div>
           <div></div>
         </Row>
@@ -169,7 +171,7 @@ export default function About() {
               <h6>
                 <span style={{ fontSize: "45px" }}>
                   <i className="fas fa-server my-3"></i>
-                </span>{" "}
+                </span>
                 <br></br>
                 <span
                   style={{

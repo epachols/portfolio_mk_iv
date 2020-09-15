@@ -6,7 +6,7 @@ export default function ProjectContainer(props) {
     return (
         <Row className="px-2">
            {props.projects&&props.projects[0]? (
-               props.projects.map(project => <ProjectCard project={project}/>)
+               props.projects.map(project => <ProjectCard key={project.id} project={project}/>)
                ) : (
                    <h2>sorry we loadin ova here</h2>
                )}

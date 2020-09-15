@@ -1,0 +1,22 @@
+.contactBtn {
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 30px;
+    color: #3C5BA3;
+    transition: all ease-in-out 0.2s;
+    margin: 0 .5rem;
+}
+
+.contactBtn i {
+    margin: auto auto;
+}
+.contactBtn:hover {
+    background-color: #3C5BA3;
+    color: white;
+    text-decoration: none;
+}

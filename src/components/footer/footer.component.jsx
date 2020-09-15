@@ -7,7 +7,7 @@ export default function Footer() {
     <div className="footerContainer">
       <img className="footerFade" src={fadeImg} width={`100%`} alt="fade effect on footer"></img>
       <div className="footerBody">
-        &copy; Evan Pacholski (codeCrow) &nbsp;&nbsp;
+        &copy; crafted with <span role="img" aria-label="heart">❤️</span> by Evan Pacholski &nbsp;&nbsp;
         <a
           href="https://www.linkedin.com/in/epacholski/"
           target="_blank"
