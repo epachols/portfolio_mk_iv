@@ -11,9 +11,7 @@ export default function NavBar() {
     <>
       <Navbar id="onlyNav" expand="xl">
         <Navbar.Brand
-          href="https://www.linkedin.com/in/epacholski/"
-          target="_blank"
-          title="visit my linkedin"
+          href="#"
         >
           
           <span className="navBrand"><img src={Logo} height="40px" alt="ETP logo"></img></span>
