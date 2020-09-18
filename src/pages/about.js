@@ -34,7 +34,7 @@ export default function About() {
             <h1>Hello,</h1>
             <h2>I'm Evan. I hope today finds you well.</h2>
             <p className="my-5 px-5">
-              I am a junior Full Stack Developer with a love of design and a
+              I am a Full Stack Developer with a love of design and a
               keen interest in data management solutions. Curiosity, enthusiasm
               and a dedicated nature combined with a palette of soft skills
               drives me to learn and grow daily, and I look forward to new
