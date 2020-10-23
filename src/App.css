@@ -51,11 +51,12 @@ body {
 .callToAction {
   display: inherit;
   background-color: rgb(0, 33, 85);
-  width: 66%;
-  height: 100px;
+  width: 420px;
+  height: 125px;
   justify-content: space-around;
   align-items: center;
   margin-top: 80px;
+  padding: 10px;
   border-radius: 2rem;
 
 }

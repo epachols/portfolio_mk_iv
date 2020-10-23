@@ -1,5 +1,6 @@
 import React from 'react'
 import Row from 'react-bootstrap/Row'
+import CrowSpinner from '../crowspinner/crowspinner.component'
 import ProjectCard from '../projectCard/projectcard.component'
 
 export default function ProjectContainer(props) {
@@ -8,7 +9,7 @@ export default function ProjectContainer(props) {
            {props.projects&&props.projects[0]? (
                props.projects.map(project => <ProjectCard key={project.id} project={project}/>)
                ) : (
-                   <h2>sorry we loadin ova here</h2>
+                   <CrowSpinner />
                )}
         </Row>
     )
